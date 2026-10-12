@@ -1,0 +1,12 @@
+name: print-name
+
+on:
+        push:
+                branches:
+                - main
+job:              
+        print:
+                runs-on: ubuntu-latest
+                steps:
+                - name: Print meaasage
+                  run: echo "run completes successfully"
