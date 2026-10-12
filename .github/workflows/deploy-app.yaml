@@ -1,0 +1,17 @@
+name: deploy-app
+on:
+        pull_request:
+                branches: 
+                - main
+                types"
+                - open
+                - update
+        push:
+                branches:
+                - main
+job:
+        testing:
+         runs-on: ubuntu
+         steps:
+         - name: print
+           run: echo "Deploying app¦"      
